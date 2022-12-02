@@ -14,6 +14,7 @@ const select = document.querySelector('#sort');
 // Load from local storage
 window.addEventListener('load', function () {
   show = JSON.parse(localStorage.getItem('data'));
+  data = [...show];
   console.log(show);
   userData.innerHTML = '';
   for (let i = 0; i < show.length; i++) {
