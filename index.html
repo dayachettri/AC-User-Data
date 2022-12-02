@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- local stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+    <title>User Data</title>
+  </head>
+
+  <body>
+    <h1>USER DATA</h1>
+    <form class="filter-data">
+      <select name="" id="sort">
+        <option value="">SELECT ONE</option>
+        <option value="A-Z">SORT(A-Z)</option>
+        <option value="Z-A">SORT(Z-A)</option>
+      </select>
+      <input id="search-input" type="text" placeholder="PAN NUMBER" />
+    </form>
+    <form class="input-data">
+      <input class="name-input" type="text" placeholder="NAME" required />
+      <input class="pan-input" type="number" placeholder="PAN" required />
+      <input class="age-input" type="number" placeholder="AGE" required />
+      <input
+        class="qual-input"
+        type="text"
+        placeholder="QUALIFICAION"
+        required
+      />
+      <button class="submit" type="submit">ADD</button>
+    </form>
+
+    <section class="user-data"></section>
+    <!-- javascript  -->
+    <script src="index.js"></script>
+  </body>
+</html>
